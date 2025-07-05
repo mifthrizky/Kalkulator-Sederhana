@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FBFBFB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Class : calculator */
+.calculator {
+    width: 400px;
+    background-color: #91C8E4;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 25px; 
+}
+
+/* Id : Display */
+#display {
+    width: 100%; 
+    box-sizing: border-box;
+    height: 75px; 
+    margin-bottom: 25px; 
+    font-size: 42px; 
+    text-align: right;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+}
+
+/* Class : button */
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; 
+}
+
+/* Class : btn */
+.btn {
+    padding: 25px; 
+    font-size: 24px; 
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+
+.btn:active{
+    background-color: #ddd;
+}
+
+/* Class : operator */
+.operator{
+    background-color: #f9a825;
+    color: white;
+}
+
+.operator:active{
+    background-color: #b87b19;
+}
+
+.clear {
+    grid-column: span 4;
+    background-color: #e53935;
+    color: white;
+    width: 100%;
+}
+
+.clear:active{
+    background-color: #c62828;
+}
